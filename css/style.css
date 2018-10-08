@@ -1,0 +1,25 @@
+body {
+  background-color: grey;
+}
+div {
+  color: maroon;
+}
+
+#motto {
+  color: darkcyan;
+}
+
+.favorite {
+  font-weight: bold;
+}
+
+div {
+  background-color: wheat;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #777777;
+}
+p {
+  background-color: aquamarine;
+  text-align: left;
+}

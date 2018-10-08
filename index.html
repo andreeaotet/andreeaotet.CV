@@ -3,26 +3,61 @@
 <head>
 	<title>Parcel Sandbox</title>
 	<meta charset="UTF-8" />
+	<link href="css/style.css"
 </head>
 
 <body>
 
-	<h1>CV</h1>
+	<h1 style="text-align:center">CV</h1>
 	<br>
-	<p><b>Andreea Maria Otet<b/></p>
+	<p style="text-align:right"><b>Andreea Maria Otet<b/></p>
+	<img src="logo.jpg" alt="My picture" width="30%">
+	<hr>
+	<br>
 
 	<p>Asistent medical generalist</p>
 	<br>
+	<div>
 	<h2><b>Skills:</b></h2>
-		<ul>
-			<li>HTML</li>
+		<ul id="motto">
+			<li class="favorite">HTML</li>
 			<li>CSS</li>
-			<li>JS</li>
-	</p>
-	</ul>
+			<li class="favorite">JS</li>
+		</ul>
+	</div>
+		<div>
+			<h3>Languages</h3>
+			<table border="2"; style="width:50%">
+				<tr>
+					<th>Limbi vorbite</th>
+					<th>Nivel</th>
+				</tr>
+				<tr>
+					<td>Romana</td>
+					<td>Nativ</td>
+				</tr>
+				<tr>
+					<td>Engleza</td>
+					<td>Avansat</td>
+				</tr>
+				<tr>
+					<td>Italiana</td>
+					<td>Mediu</td>
+				</tr>
+			</table>
+		</div>
+		<br>
+<hr>
+		<h3>Contact:</h3>
+		<p>Hire me!</p>
 
+		<form>
+			<label> Your email </label>
+			<input name="recruterEmail" type="email" placeholder="email@name.com">
+			<input type="submit">
+		</form>
 
-	<div id="app"></div>
+		<div id="app"></div>
 </body>
 
 </html>
