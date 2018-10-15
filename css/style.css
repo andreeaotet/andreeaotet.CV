@@ -1,25 +1,82 @@
 body {
-  background-color: grey;
+  background-color: whitesmoke;
+  margin-left: 200px;
+  background-attachment: fixed;
+  width: max-content;
 }
-div {
-  color: maroon;
+.clearfix {
+  overflow: auto;
+}
+
+div.a {
+  line-height: 50%;
+  text-align: right;
+}
+
+#wrap {
+  width: 1000px;
+}
+
+div.b {
+  text-align: left;
+  line-height: 50%;
+  width: 480px;
+  height: 300px;
+  float: left;
+}
+
+div.c {
+  text-align: right;
+  line-height: 50%;
+  width: 480px;
+  height: 300px;
+  float: right;
 }
 
 #motto {
-  color: darkcyan;
+  color: black;
 }
 
 .favorite {
   font-weight: bold;
 }
 
+.conf {
+  width: 500px;
+}
+
 div {
-  background-color: wheat;
+  background-color: #fff9ee;
   padding: 10px;
   margin: 10px;
-  border: 1px solid #777777;
+  border: 1px solid #b3b1b1;
+  color: maroon;
+  font-size: 16px;
 }
-p {
-  background-color: aquamarine;
+
+.main {
+  width: 1000px;
+}
+
+#script {
+  background-color: rgb(201, 231, 236);
   text-align: left;
+  font-size: 25px;
+}
+
+.borderImg {
+  border-radius: 1000px;
+}
+
+img {
+  width: 270px;
+  float: left;
+}
+
+h2 {
+  text-decoration: underline;
+  font-size: 20px;
+}
+div.e {
+  line-height: 40%;
 }
