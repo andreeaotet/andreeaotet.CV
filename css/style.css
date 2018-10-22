@@ -1,11 +1,21 @@
 body {
   background-color: whitesmoke;
-  margin-left: 200px;
+  margin-left: 150px;
+  margin-right: 150px;
   background-attachment: fixed;
   width: max-content;
 }
 .clearfix {
   overflow: auto;
+}
+hr {
+  color: lightgrey;
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
 }
 
 div.a {
@@ -15,6 +25,9 @@ div.a {
 
 #wrap {
   width: 1000px;
+}
+
+.block {
 }
 
 div.b {
@@ -35,6 +48,7 @@ div.c {
 
 #motto {
   color: black;
+  list-style-type: none;
 }
 
 .favorite {
@@ -79,4 +93,29 @@ h2 {
 }
 div.e {
   line-height: 40%;
+}
+#top-menu-bar {
+  text-align: center;
+  color: #fff;
+  background-color: #334455;
+}
+#top-menu-bar li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+#top-menu-bar a {
+  padding: 10px 15px 10px 15px;
+  margin: 2px 0 2px 0;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  font-family: "Times New Roman", Times, serif;
+}
+#top-menu-bar a:visited {
+  color: #fff;
+}
+#top-menu-bar a:hover {
+  color: #334455;
+  background-color: #ffffff;
 }
