@@ -36,12 +36,28 @@ sayWelcome();
 var cursEUR = 4.5;
 var myEUR = 20;
 var myRON = 0;
-var friendEUR = 10;
+var friendEUR = 100;
 var friendRON = 0;
 
 // operatori * / + -
 myRON = myEUR * cursEUR;
 console.info("eu am " + myRON + " RON");
 
-friendRON = friendEUR * cursEUR;
+cursEUR = (friendEUR * cursEUR * 1) / 100;
+friendEUR = friendRON * cursEUR;
 console.info("el are " + friendRON + " RON");
+
+function extractfromATM(amount) {
+  console.info("==== ==== ==== ==== ====");
+  console.info("suma extrasa este: " + amount);
+  var comision = amount * 0.01;
+  if (comision < 2.5) {
+    comision = 2.5;
+    console.warn("comision minim aplicat");
+  }
+  console.info("comision aplicat: " + comision);
+  console.info("==== ==== ==== ==== ====");
+}
+
+extractfromATM(1000);
+extractfromATM(100);
