@@ -1,8 +1,13 @@
-document.getElementById("app").innerHTML = `
-<h1>Hello Parcel!</h1>
-<div>
-  Look
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>
-  for more info about Parcel.
-</div>
-`;
+// var Nume = "Otet";
+// var Prenume = "Andreea";
+// var owner = "Andreea's";
+// var msg1 = 'ai zis "Nick"?';
+// var msg2 = "Nu, am zis 'Nicolae'";
+// var template = `text cu ghilimele " sau simple'`;
+// var skills = ["html", "css", "js"];
+
+// Prenume = "Nick";
+
+// console.info("toate variabilele au fost initializate");
+// console.log("Nume");
+// console.debug("cum te cheama? - " + Prenume);
