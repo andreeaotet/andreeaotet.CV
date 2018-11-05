@@ -47,17 +47,45 @@ cursEUR = (friendEUR * cursEUR * 1) / 100;
 friendEUR = friendRON * cursEUR;
 console.info("el are " + friendRON + " RON");
 
-function extractfromATM(amount) {
-  console.info("==== ==== ==== ==== ====");
-  console.info("suma extrasa este: " + amount);
+var ATMFunds = 10000;
+var funds = 5000;
+
+function getExtractFee(amount) {
   var comision = amount * 0.01;
   if (comision < 2.5) {
     comision = 2.5;
     console.warn("comision minim aplicat");
   }
+  return comision;
+}
+
+function extractfromATM(amount) {
+  console.info("==== ==== ==== ==== ====");
+  console.info("suma extrasa este: " + amount);
+  var comision = getExtractFee(amount);
+
+  var totalExtract = amount + comision;
+
+  if (totalExtract > funds) {
+    console.error("insufficient funds");
+    return 0;
+  }
+  if (ATMFunds < totalExtract) {
+    console.error("Fonduri insuficiente ATM");
+  }
+
+  funds = funds - totalExtract;
+  // ATMFunds = ATMFunds - amount;
+  ATMFunds -= amount;
+  console.info("Sold curent " + funds);
   console.info("comision aplicat: " + comision);
   console.info("==== ==== ==== ==== ====");
 }
 
-extractfromATM(1000);
+extractfromATM(1005); // nu e multiplu de 10
+extractfromATM(100000); // solduri insuficiente
 extractfromATM(100);
+extractfromATM(3000);
+extractfromATM(3000);
+extractfromATM(20000);
+extractfromATM(0); // sa nu ia comision
