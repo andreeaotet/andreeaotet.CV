@@ -97,3 +97,16 @@ extractfromATM(3000);
 extractfromATM(3000);
 extractfromATM(20000);
 extractfromATM(0); // sa nu ia comision
+
+
+
+x = sumAll(7, 13, 46, 21);
+
+function sumAll() {
+  var i;
+  var sum = 0;
+  for (i = 0; i < arguments.length; i++) {
+      sum += arguments[i];
+  }
+  return sum;
+}
