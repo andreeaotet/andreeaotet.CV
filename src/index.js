@@ -8,27 +8,77 @@ function dropdownMenu() {
     }
 }
 
+function hide(id) {
+    document.getElementById(id).style.display = "none";
+}
+
+function show(id) {
+    document.getElementById(id).style.display = "block";
+}
+
 function showSkillsPage() {
-    console.log('show page');
-    document.getElementById("languages-page").style.display = "none";
-    document.getElementById("home-page").style.display = "block";
-    document.getElementById("experience-page").style.display = "none";
-    document.getElementById("education-page").style.display = "none";
-    document.getElementById("contact-page").style.display = "none";
-    document.getElementById("skills-page").style.display = "block";
+    // console.log('show page');
+    hide("languages-page");
+    hide("home-page");
+    hide("experience-page");
+    hide("education-page");
+    hide("contact-page");
+    show("skills-page");
 }
 
 document.getElementById("skills-menu").onclick = showSkillsPage;
 
 function showLanguagesPage() {
-    document.getElementById("home-page").style.display = "none";
-    document.getElementById("skills-page").style.display = "none";
-    document.getElementById("experience-page").style.display = "none";
-    document.getElementById("education-page").style.display = "none";
-    document.getElementById("contact-page").style.display = "none";
-    document.getElementById("languages-page").style.display = "block";
+    hide("home-page");
+    hide("skills-page");
+    hide("experience-page");
+    hide("education-page");
+    hide("contact-page");
+    show("languages-page");
 }
 
 document.getElementById("languages-menu").onclick = showLanguagesPage;
 
+function showHomePage() {
+    hide("languages-page");
+    hide("skills-page");
+    hide("experience-page");
+    hide("education-page");
+    hide("contact-page");
+    show("home-page");
+}
 
+document.getElementById("home-menu").onclick = showHomePage;
+
+function showExperiencePage() {
+    hide("home-page");
+    hide("skills-page");
+    hide("languages-page");
+    hide("education-page");
+    hide("contact-page");
+    show("experience-page");
+}
+
+document.getElementById("experience-menu").onclick = showExperiencePage;
+
+function showEducationPage() {
+    hide("home-page");
+    hide("skills-page");
+    hide("experience-page");
+    hide("languages-page");
+    hide("contact-page");
+    show("education-page");
+}
+
+document.getElementById("education-menu").onclick = showEducationPage;
+
+function showContactPage() {
+    hide("home-page");
+    hide("skills-page");
+    hide("experience-page");
+    hide("education-page");
+    hide("languages-page");
+    show("contact-page");
+}
+
+document.getElementById("contact-menu").onclick = showContactPage;
