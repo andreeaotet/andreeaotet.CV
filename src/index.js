@@ -8,12 +8,17 @@ function dropdownMenu() {
     }
 }
 
+function $(id) {
+    return document.getElementById(id);
+}
+
+
 function hide(id) {
-    document.getElementById(id).style.display = "none";
+    $(id).style.display = "none";
 }
 
 function show(id) {
-    document.getElementById(id).style.display = "block";
+    $(id).style.display = "block";
 }
 
 function showSkillsPage() {
