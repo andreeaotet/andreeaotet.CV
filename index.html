@@ -3,7 +3,7 @@
 <head>
 	<title>CV</title>
 	<meta charset="UTF-8" />
-	<link rel="stylesheet" href="stylecv.css">
+	<link rel="stylesheet" href="css/stylecv.css">
 	<link href="https://www.linkedin.com/in/andreea-otet-0ab497170">
 
 </head>
@@ -30,28 +30,24 @@
 		</div>
 
 		<ul class="topnav" id="dropdownClick" id="top-menu-bar">
-			<li><a href="#" id="home-menu"><b>Home</b></a></li>
-			<li><a href="#" id="experience-menu"><b>Experience</b></a></li>
-			<li><a href="#" id="education-menu"><b>Education</b></a></li>
-			<li><a href="#" id="skills-menu"><b>Skills</b></a></li>
-			<li><a href="#" id="languages-menu"><b>Languages</b></a></li>
-			<li><a href="#" id="contact-menu"><b>Contact</b></a></li>
-			<li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
+			<li><a href="#" id="home-menu" class="menu-item" data-page="home"><b>Home</b></a></li>
+			<li><a href="#" id="experience-menu" class="menu-item" data-page="experience"><b>Experience</b></a></li>
+			<li><a href="#" id="education-menu" class="menu-item" data-page="education"><b>Education</b></a></li>
+			<li><a href="#" id="skills-menu" class="menu-item" data-page="skills"><b>Skills</b></a></li>
+			<li><a href="#" id="languages-menu" class="menu-item" data-page="languages"><b>Languages</b></a></li>
+			<li><a href="#" id="contact-menu" class="menu-item" data-page="contact"><b>Contact</b></a></li>
+			<li class=" "><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>
 		</ul>
 
 		<div class="test" id="content-wrap">
-
 			<div class="test" id="content">
 
-				<div class="test">
-
+				<div class="test" id="inner-content">
 					<div class="page-block" id="home-page">
 						Welcome Andreea!
 					</div>
-				</div>
-
-				<div class="test">
-					<div class="page-block" id="languages-page" style="display: none;">
+			
+					<div class="page-block" id="languages-page">
 						<h2 style="text-decoration:underline">Languages</h2>
 						<table border="2" ; style="width:100%">
 							<tr>
@@ -72,10 +68,9 @@
 							</tr>
 						</table>
 					</div>
-				</div>
 
-				<div class="test">
-					<div class="page-block" id="experience-page" style="display: none;">
+				
+					<div class="page-block" id="experience-page">
 						<h2 style="text-align: left; font-size: 20px; text-decoration: underline"><b>Experience</b></h2>
 						<br>
 						<p style="text-align: left">Hotel Receptionist <i>at</i> Vila Dorobantilor, Cluj Napoca</p>
@@ -87,10 +82,8 @@
 						<p style="text-align: left">Child Care <i>at</i> Kidsland Totto Space, Cluj Napoca</p>
 						<p style="text-align: left">Nov 2015 - Aug 2016</p>
 					</div>
-				</div>
-
-				<div class="test">
-					<div class="page-block" id="education-page" style="display: none;">
+				
+					<div class="page-block" id="education-page">
 						<h2 style="text-align: left; font-size: 20px; text-decoration: underline"><b>Education</b></h2>
 						<br>
 						<p style="font-size: 20px ">"Ocrotirea" Post Secondary School</p>
@@ -102,10 +95,8 @@
 						<p><i>Bachelor's degree</i></p>
 						<p>Period: 2010-2013</p>
 					</div>
-				</div>
-
-				<div class="test" id="">
-					<div class="page-block" id="skills-page" style="display: none;">
+				
+					<div class="page-block" id="skills-page">
 						<h2 style="text-decoration:underline"><b>Skills:</b></h2>
 						<ul id="motto">
 							<li class="favorite">Microsoft Office</li>
@@ -119,10 +110,8 @@
 							<li class="favorite">JS</li>
 						</ul>
 					</div>
-				</div>
-
-				<div class="test" id="contact">
-					<div class="page-block" id="contact-page" style="display: none;">
+				
+					<div class="page-block" id="contact-page">
 						<h3 style="text-decoration: underline" font-size: 20px>Contact:</h3>
 						<p>Hire me!</p>
 						<form>
