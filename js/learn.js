@@ -110,3 +110,10 @@ function sumAll() {
   }
   return sum;
 }
+
+var array = [3,5,6,9];
+
+arrayA = array.map(function(n) {
+  return n * n;
+});
+
