@@ -116,23 +116,31 @@ function initMenu() {
 
 function initSkillsPage() {
     var skills = [
-    ['js', 7, "Andrei"],
-    ['html', 6, "Andreea"],
-    ['css', 2, ""]
+        // ['js', 7, "Andrei"],
+        // ['html', 6, "Andreea"],
+        // ['css', 2, ""],
+
+        //var skill = {
+            //name: ,
+            //endorsments: ,
+            //endorsedBy:
+        //}
+        { name: "js", endorsments: 7, endorsedBy: "Andrei" },
+        { name: "html", endorsments: 6, endorsedBy: "Andreea" },
+        { name: "css", endorsments: 7, endorsedBy: "" }
     ];
     var resultlist = document.querySelector('#skills-page ul');
 
     var skillsli = skills.map(function (skill) {
         var endorsedBy = "~ Endorsed by";
-        if (skill[2] == "") {
+        if (skill.endorsedBy == "") {
             endorsedBy = "";
         };
-
-        var name = skill[0].toUpperCase();
+        var name = skill.name.toUpperCase();  //skill[0].toUpperCase();
         return `<li>${name}
-        <span style = "color: gray">- ${skill[1]}
-        ${endorsedBy}</span>${skill[2]}
-        </li>`; // '<li>' + skills[0] + '</li>'
+        <span style = "color: gray">- ${skill.endorsments}
+        ${endorsedBy}</span>${skill.endorsedBy}
+                </li>`; // '<li>' + skills[0] + '</li>'
 
     });
     console.log('resultList:', skillsli);
