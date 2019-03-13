@@ -8,78 +8,17 @@ function dropdownMenu() {
     }
 }
 
-function $(id) {
+function $$(id) {
     return document.getElementById(id);
 }
 
 function hide(id) {
-    $(id).style.display = "none";
+    $$(id).style.display = "none";
 }
 
 function show(id) {
-    $(id).style.display = "block";
+    $$(id).style.display = "block";
 }
-
-// function showSkillsPage() {
-//     hide("languages-page");
-//     hide("home-page");
-//     hide("experience-page");
-//     hide("education-page");
-//     hide("contact-page");
-//     show("skills-page");
-// }
-
-// function showLanguagesPage() {
-//     hide("home-page");
-//     hide("skills-page");
-//     hide("experience-page");
-//     hide("education-page");
-//     hide("contact-page");
-//     show("languages-page");
-// }
-
-// function showHomePage() {
-//     hide("languages-page");
-//     hide("skills-page");
-//     hide("experience-page");
-//     hide("education-page");
-//     hide("contact-page");
-//     show("home-page");
-// }
-
-// function showExperiencePage() {
-//     hide("home-page");
-//     hide("skills-page");
-//     hide("languages-page");
-//     hide("education-page");
-//     hide("contact-page");
-//     show("experience-page");
-// }
-
-// function showEducationPage() {
-//     hide("home-page");
-//     hide("skills-page");
-//     hide("experience-page");
-//     hide("languages-page");
-//     hide("contact-page");
-//     show("education-page");
-// }
-
-// function showContactPage() {
-//     hide("home-page");
-//     hide("skills-page");
-//     hide("experience-page");
-//     hide("education-page");
-//     hide("languages-page");
-//     show("contact-page");
-// }
-
-// $("home-menu").onclick = showHomePage;
-// $("skills-menu").onclick = showSkillsPage;
-// $("education-menu").onclick = showEducationPage;
-// $("experience-menu").onclick = showExperiencePage;
-// $("contact-menu").onclick = showContactPage;
-// $("languages-menu").onclick = showLanguagesPage;
 
 function hideElement(page) {
     page.style.display = "none";
@@ -87,15 +26,7 @@ function hideElement(page) {
 
 function hideAllPages() {
     var pages = document.querySelectorAll(".page-block");
-    // pages.forEach(function(page) {
-    //     console.info("hide : " + page.id);
-    //     page.style.display = "none";
-    // });
     pages.forEach(hideElement);
-
-    // for (var i = 0; i < pages.length; i++) {
-    //     pages[i].style.display = 'none';
-    // }
 }
 
 
@@ -114,25 +45,11 @@ function initMenu() {
     }
 }
 
-function initSkillsPage() {
-    var skills = [
-        // ['js', 7, "Andrei"],
-        // ['html', 6, "Andreea"],
-        // ['css', 2, ""],
-
-        //var skill = {
-            //name: ,
-            //endorsments: ,
-            //endorsedBy:
-        //}
-        { name: "js", endorsments: 7, endorsedBy: "Andrei" },
-        { name: "html", endorsments: 6, endorsedBy: "Andreea" },
-        { name: "css", endorsments: 7, endorsedBy: "" }
-    ];
+function displaySkills() {
     var resultlist = document.querySelector('#skills-page ul');
 
     var skillsli = skills.map(function (skill) {
-        var endorsedBy = "~ Endorsed by";
+        var endorsedBy = "~ Endorsed by ";
         if (skill.endorsedBy == "") {
             endorsedBy = "";
         };
@@ -144,11 +61,18 @@ function initSkillsPage() {
 
     });
     console.log('resultList:', skillsli);
+
     resultlist.innerHTML = skillsli.join('');
-
-
 }
-initMenu();
-show('skills-page');
-initSkillsPage();
 
+function initSkillsPage() {
+
+    $.ajax('data/skills.json').done(function (skills) {
+        console.info('fileData', skills);
+        displaySkills(skills);
+    }) 
+}
+
+initMenu();
+$('#skills-page').show();
+initSkillsPage();

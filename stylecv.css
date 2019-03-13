@@ -1,9 +1,13 @@
 /* ######### DEFAULTS ######### */
 
 body {
-  background-color: rgb(186, 236, 232);
+  background-color: rgb(53, 182, 171);
   background-attachment: fixed;
   width: 100%;
+}
+
+header {
+  height: 100px;
 }
 
 #header {
@@ -15,13 +19,8 @@ body {
   box-shadow: 2px;
 }
 
-div {
-  background-color: rgb(186, 236, 232);
-  padding: 10px;
-  margin: 10px;
-  border: none;
-  color: maroon;
-  font-size: 16px;
+header.clearfix {
+  background-image: url(https://ak6.picdn.net/shutterstock/videos/6938686/thumb/1.jpg);
 }
 
 .page-block {
@@ -63,12 +62,6 @@ div {
   background-color: #ffffff;
 }
 
-/* .test {
-  border: 1px solid black;
-  margin: 5px;
-  padding: 5px;
-} */
-
 #news {
   width: 50%;
   border: none;
@@ -96,9 +89,6 @@ div {
   border-color: none;
   padding-left: 35%;
   border: none;
-}
-
-#content div {
   border-color: aquamarine;
 }
 
@@ -149,6 +139,8 @@ input[type="text"]{
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 #footer {
@@ -205,6 +197,7 @@ ul.topnav li.dropdownIcon {
 @media screen and (max-width: 680px) {
     ul.topnav li:not(:nth-child(1)) {
         display: none;
+    }
 
 ul.topnav li.dropdownIcon {
     display: block;

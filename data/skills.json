@@ -1,0 +1,18 @@
+[1, 2, 3]
+
+[
+    {   "name": "js",
+        "endorsments": 7,
+        "endorsedBy": "Andrei"
+    },
+
+    {   "name": "html",
+        "endorsments": 6,
+        "endorsedBy": "Andreea"
+    },
+
+    {   "name": "css",
+        "endorsments": 7,
+        "endorsedBy": ""
+    }
+]
