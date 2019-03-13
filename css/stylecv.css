@@ -26,7 +26,7 @@ body {
 
 .clearfix {
   /* background-image: linear-gradient(rgba(0.2, 0.2, 0.2, 0.918), rgba(0.2, 0.2, 0.2, 0.911)); */
-  background: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Simple-Background-Images-2.png);
+  background-image: url("headerImg.png");
   overflow: auto;
   font-size: 16px;
   font-family: "Judson", serif;
