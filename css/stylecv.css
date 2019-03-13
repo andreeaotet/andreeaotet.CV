@@ -259,4 +259,8 @@ input[type="text"] {
 .skillsItem {
   font-size: 20px;
 }
+
+#home-page, #employment-page, #education-page, #languages-page, #skills-page, #contact-page {
+  font-size: 15px;
+}
     }
