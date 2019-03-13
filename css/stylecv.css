@@ -1,7 +1,5 @@
 /* ######### DEFAULTS ######### */
 
-
-
 nav,
 header,
 footer {
@@ -18,15 +16,14 @@ body {
 #header {
   text-align: center;
   font-family: "Judson", serif;
-  font-size: 30px;
+  /* font-size: 30px; */
   padding: 15px;
   margin: 5px;
   box-shadow: 2px;
 }
 
 .clearfix {
-  /* background-image: linear-gradient(rgba(0.2, 0.2, 0.2, 0.918), rgba(0.2, 0.2, 0.2, 0.911)); */
-  background-image: url("headerImg.png");
+  background-image: url(headerImg.png);
   overflow: auto;
   font-size: 16px;
   font-family: "Judson", serif;
@@ -179,6 +176,27 @@ nav ul {
     display: none;
 }
 
+/* ########### PAGES ############ */
+
+#home-page {
+  box-shadow: 4px -1px 5px 0px black;
+  font-size: 26px;
+  color: black;
+  border: 1px solid black;
+}
+
+.skillsItem {
+  list-style: none;
+  text-align: left;
+  font-size: 28px;
+}
+
+#skillsTitle {
+  text-align: right;
+  font-size: 35px;
+  color: rgb(61, 61, 61);
+}
+
 
 /* ########### MOBILE ########### */
 
@@ -214,5 +232,9 @@ ul.topnav.responsive li a {
 
 input[type="text"] {
     width: 320px;
+}
+
+.skillsItem {
+  font-size: 20px;
 }
     }
