@@ -74,5 +74,5 @@ function initSkillsPage() {
 }
 
 initMenu();
-$('#skills-page').show();
+$('#home-page').show();
 initSkillsPage();

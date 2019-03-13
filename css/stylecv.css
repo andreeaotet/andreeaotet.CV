@@ -23,9 +23,11 @@ body {
 }
 
 .clearfix {
+  padding-left: 50px;
+  padding-right: 50px;
   background-image: url(headerImg.png);
   overflow: auto;
-  font-size: 16px;
+  font-size: 19px;
   font-family: "Judson", serif;
 }
 
@@ -178,11 +180,20 @@ nav ul {
 
 /* ########### PAGES ############ */
 
-#home-page {
+#home-page, #skills-page, #education-page, #employment-page, #languages-page, #contact-page {
   box-shadow: 4px -1px 5px 0px black;
   font-size: 26px;
   color: black;
   border: 1px solid black;
+  background-color: rgb(245, 243, 243);
+}
+
+#list1, #list2, #list3 {
+  list-style: none;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 50px;
+  font-style: italic;
 }
 
 .skillsItem {
@@ -191,10 +202,21 @@ nav ul {
   font-size: 28px;
 }
 
-#skillsTitle {
+#skillsTitle, #educationTitle, #employmentTitle, #languagesTitle, #contactTitle {
   text-align: right;
   font-size: 35px;
   color: rgb(61, 61, 61);
+}
+
+#education-page {
+  text-align: left;
+}
+
+#list4, #list5 {
+  list-style: none;
+  font-size: 20px;
+  text-align: left;
+  margin-left: 50px;
 }
 
 
