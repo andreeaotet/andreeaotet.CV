@@ -1,26 +1,47 @@
 /* ######### DEFAULTS ######### */
 
+
+
+nav,
+header,
+footer {
+  display: inline-block;
+  width: 100%;
+}
+
 body {
-  background-color: rgb(53, 182, 171);
+  background-color: rgb(255, 255, 255);
   background-attachment: fixed;
   width: 100%;
 }
 
-header {
-  height: 100px;
-}
-
 #header {
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Judson", serif;
   font-size: 30px;
   padding: 15px;
   margin: 5px;
   box-shadow: 2px;
 }
 
-header.clearfix {
-  background-image: url(https://ak6.picdn.net/shutterstock/videos/6938686/thumb/1.jpg);
+.clearfix {
+  /* background-image: linear-gradient(rgba(0.2, 0.2, 0.2, 0.918), rgba(0.2, 0.2, 0.2, 0.911)); */
+  background: url(https://venngage-wordpress.s3.amazonaws.com/uploads/2018/09/Simple-Background-Images-2.png);
+  overflow: auto;
+  font-size: 16px;
+  font-family: "Judson", serif;
+}
+
+.a p {
+  text-shadow: 0px 0px 20px black;
+}
+
+div {
+  padding: 10px;	
+  margin: 10px;	
+  border: none;	
+  color: maroon;	
+  /* font-size: 13px;	 */
 }
 
 .page-block {
@@ -37,29 +58,9 @@ header.clearfix {
   width: 300px;
 }
 
-#top-menu-bar {
-  text-align: center;
-  color: #fff;
-  background-color: #334455;
-}
-#top-menu-bar li {
-  display: inline;
-  margin: 0;
-  padding: 0;
-}
-#top-menu-bar a {
-  text-decoration: none;
-  padding: 0 15px 5px 15px;
-  color: #fff;
-  display: inline-block;
-}
-#top-menu-bar a:visited {
-  color: #fff;
-}
-
-#top-menu-bar a:hover {
-  color: #334455;
-  background-color: #ffffff;
+.test {	
+  margin: 5px;	
+  padding: 5px;	
 }
 
 #news {
@@ -92,42 +93,18 @@ header.clearfix {
   border-color: aquamarine;
 }
 
-.col-1 {
-  width: 8.33%;
-}
-.col-2 {
-  width: 16.66%;
-}
-.col-3 {
-  width: 25%;
-}
-.col-4 {
-  width: 33.33%;
-}
-.col-5 {
-  width: 41.66%;
-}
-.col-6 {
-  width: 50%;
-}
-.col-7 {
-  width: 58.33%;
-}
-.col-8 {
-  width: 66.66%;
-}
-.col-9 {
-  width: 75%;
-}
-.col-10 {
-  width: 83.33%;
-}
-.col-11 {
-  width: 91.66%;
-}
-.col-12 {
-  width: 100%;
-}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
 
 input[type="text"]{
     font-size: 15px;
@@ -156,39 +133,50 @@ nav {
 }
 
 nav ul {
-    background-color: #eee;
     overflow: hidden;
     margin: 0;
     padding: 0;
 }
 
-ul.topnav li {
+.topnav {
+  text-align: center;
+  color: #fff;
+  float: right;
+}
+
+.topnav li {
     list-style: none;
-    float: left;
+    display: inline-block;
+    margin: 10px;
+    padding: 0;
 }
 
-ul.topnav li.topnav-right {
-    float: right;
-}
-
-ul.topnav li a {
-    display: block;
+.topnav li a {
+    display: inline-block;
     text-decoration: none;
     min-height: 16px;
     text-align: center;
-    padding: 14px;
     text-transform: uppercase;
-    color: #666;
+    color: #fff;
+    padding: 5px 15px;
 }
 
-ul.topnav li a:hover {
-    background-color: #0080ff;
+.topnav li a:hover {
     color: white;
+    border: 1px solid white;
 }
 
-ul.topnav li.dropdownIcon {
+.topnav li a:visited {
+  color: #fff;
+  border: 1px solid white;
+}
+
+.topnav li.active {
+  border: 1px solid white;
+}
+
+.topnav li.dropdownIcon {
     display: none;
-    
 }
 
 
