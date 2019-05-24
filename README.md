@@ -1,3 +1,3 @@
 # Open Link
 
-[CV] ((https://andreeaotet.github.io/index.html)
+[CV] ((https://andreeaotet.github.io/andreeaotet.CV/index.html)
